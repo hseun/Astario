@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_list"
+        android:icon="@drawable/list"
+        android:title="List"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_fortune"
+        android:icon="@drawable/fortune"
+        android:title="Fortune"
+        android:enabled="true"/>
+
+</menu>
