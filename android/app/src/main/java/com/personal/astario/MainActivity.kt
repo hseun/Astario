@@ -1,8 +1,8 @@
-package com.greenonion.astario
+package com.personal.astario
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.greenonion.astario.databinding.ActivityMainBinding
+import com.personal.astario.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
