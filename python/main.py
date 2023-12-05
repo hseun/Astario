@@ -56,4 +56,4 @@ def crawling():
         time.sleep(5)
 
 
-schedule.every().day.at("00:10").do(crawling)
+schedule.every().day.at("00:05").do(crawling)
