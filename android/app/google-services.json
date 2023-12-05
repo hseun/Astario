@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "313178183149",
+    "firebase_url": "https://astario-e7543-default-rtdb.firebaseio.com",
+    "project_id": "astario-e7543",
+    "storage_bucket": "astario-e7543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313178183149:android:6482b80f2e69c6857883e4",
+        "android_client_info": {
+          "package_name": "com.personal.astario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4EZ_1S_5piTbhWyAnNjBnEtHmS7Ctxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
