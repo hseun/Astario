@@ -1,4 +1,4 @@
-package com.greenonion.astario
+package com.personal.astario
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

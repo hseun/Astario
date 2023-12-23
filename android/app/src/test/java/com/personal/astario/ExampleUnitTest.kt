@@ -1,4 +1,4 @@
-package com.greenonion.astario
+package com.personal.astario
 
 import org.junit.Test
 
