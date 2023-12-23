@@ -24,6 +24,8 @@ urlList = ["https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&qvt=
            "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&qvt=0&query=%EC%82%AC%EC%88%98%EC%9E%90%EB%A6%AC%20%EC%9A%B4%EC%84%B8",
            "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&qvt=0&query=%EC%97%BC%EC%86%8C%EC%9E%90%EB%A6%AC%20%EC%9A%B4%EC%84%B8"]
 
+num = ["11", "10", "09", "08", "07", "06", "05", "04", "03", "02", "01", "00"]
+
 
 def crawling():
     for site in urlList:
@@ -42,7 +44,8 @@ def crawling():
             during = craw_during.text.strip()
             content = craw_content.text.strip()
 
-            database = db.reference(name)
+            db_name = num[urlList.index(site)] + " " + name
+            database = db.reference(db_name)
 
             database.update({'name': name, 'during': during, "content": content, "iconUrl": icon_url})
             print(name)
@@ -57,3 +60,4 @@ def crawling():
 
 
 schedule.every().day.at("00:05").do(crawling)
+crawling()
