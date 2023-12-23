@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StarInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_info_title"
+            style="@style/fortune_text"
+            android:layout_marginStart="10dp"
+            android:text="별자리 이름"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_info_back"
+            app:layout_constraintStart_toEndOf="@id/img_info_back"
+            app:layout_constraintTop_toTopOf="@id/img_info_back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.89"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_info_back">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_info_name"
+                    style="@style/fortune_text"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="별자리 이름"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="@id/img_info"
+                    app:layout_constraintTop_toBottomOf="@id/img_info" />
+
+                <TextView
+                    android:id="@+id/text_info_story"
+                    style="@style/text_info_title"
+                    android:layout_marginTop="20dp"
+                    android:text="별자리 설화"
+                    app:layout_constraintStart_toStartOf="@id/text_info_name"
+                    app:layout_constraintTop_toBottomOf="@id/text_info_name" />
+
+                <TextView
+                    android:id="@+id/text_info_story_content"
+                    style="@style/text_info_content"
+                    android:text="별자리 설화"
+                    app:layout_constraintStart_toStartOf="@id/text_info_story"
+                    app:layout_constraintTop_toBottomOf="@id/text_info_story" />
+
+                <TextView
+                    android:id="@+id/text_info_character"
+                    style="@style/text_info_title"
+                    android:layout_marginTop="40dp"
+                    android:text="별자리 특징"
+                    app:layout_constraintStart_toStartOf="@id/text_info_story"
+                    app:layout_constraintTop_toBottomOf="@id/text_info_story_content" />
+
+                <TextView
+                    android:id="@+id/text_info_character_content"
+                    style="@style/text_info_content"
+                    android:text="별자리 특징"
+                    app:layout_constraintStart_toStartOf="@id/text_info_character"
+                    app:layout_constraintTop_toBottomOf="@id/text_info_character" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
