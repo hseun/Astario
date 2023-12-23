@@ -36,7 +36,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent="0.655"
+        app:layout_constraintWidth_percent="0.58"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toEndOf="@id/card_fortune_icon"
